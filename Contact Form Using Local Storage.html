@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Contact Form
+    </title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <tr>
+                            <td><label>Full Name</label><label class="validation-error hide" id="fullNameValidationError"></label></td>
+                            <td><input type="text" name="fullName" id="fullName"></td>
+                        </tr>
+                    </div>
+                    <div>
+                        <tr>
+                            <td><label>Company Name</label></td>
+                            <td><input type="text" name="cmpname" id="cmpname"></td>
+                        </tr>
+                    </div>
+                    <div>
+                        <tr>
+                            <td><label>Salary</label></td>
+                            <td><input type="text" name="salary" id="salary"></td>
+                        </tr>
+                    </div>
+                    <div>
+                        <tr>
+                            <td><label>City</label></td>
+                            <td><input type="text" name="city" id="city"></td>
+                        </tr>    
+                    </div>
+                    <div  class="form-action-buttons">
+                        <tr>
+                            <td><input type="submit" value="Submit"></td>
+                        </tr>
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Company Name</th>
+                            <th>Salary</th>
+                            <th>City</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="Contact Form Using Local Storage.js"></script>
+</body>
+
+</html>
